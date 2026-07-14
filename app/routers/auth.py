@@ -1,12 +1,11 @@
 from fastapi import APIRouter
 from app.schema import Tokens
 from src.user_wrokflow import get_user_data_sign,login_user
-from app.database.models import Users as User_database
 from app.schema import User as User_model
 from sqlalchemy.orm import Session
 from fastapi import Depends
 from app.database.config import get_db
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi.security import OAuth2PasswordRequestForm
 
 
 router_auth =APIRouter()
