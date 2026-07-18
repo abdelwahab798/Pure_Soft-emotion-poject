@@ -15,9 +15,14 @@ eggs/
 .eggs/
 lib/
 lib64/
+app/final_model_lora
+
 parts/
 sdist/
 expierment/results
+expierment/final_model_lora
+expierment/lora_results
+
 var/
 wheels/
 share/python-wheels/

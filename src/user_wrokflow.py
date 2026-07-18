@@ -44,7 +44,6 @@ def login_user(data_form:OAuth2PasswordRequestForm=Depends(),db:Session=Depends(
                "token_type":"bearer"}
     
     raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Ivalid email or password")
+            status_code=status.HTTP_401_UNAUTHORIZED,detail="Ivalid email or password")
     
     
